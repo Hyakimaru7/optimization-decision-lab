@@ -1,0 +1,52 @@
+{
+  "model_revision": "synthetic-model-v3",
+  "model_elements": [
+    "B_min_delivery"
+  ],
+  "validators": [
+    "check_B_order"
+  ],
+  "requirements": [
+    {
+      "id": "B_min",
+      "text": "B 产品交付至少 6 件（合成示例）",
+      "kind": "hard",
+      "source": "synthetic-order-demo",
+      "revision": "synthetic-requirement-v1",
+      "model_elements": [
+        "B_min_delivery"
+      ],
+      "validator_ids": [
+        "check_B_order"
+      ],
+      "test_ids": [
+        "B_bad5",
+        "B_boundary6"
+      ],
+      "semantic_review": {
+        "status": "confirmed",
+        "evidence": "合成演示：y>=6；请在实际调用中用真实公式审查记录替换"
+      }
+    }
+  ],
+  "tests": [
+    {
+      "id": "B_bad5",
+      "requirement_id": "B_min",
+      "requirement_revision": "synthetic-requirement-v1",
+      "model_revision": "synthetic-model-v3",
+      "validator_id": "check_B_order",
+      "result": "passed",
+      "evidence": "合成演示：独立比较 5>=6 为 false；实际用执行日志替换"
+    },
+    {
+      "id": "B_boundary6",
+      "requirement_id": "B_min",
+      "requirement_revision": "synthetic-requirement-v1",
+      "model_revision": "synthetic-model-v3",
+      "validator_id": "check_B_order",
+      "result": "passed",
+      "evidence": "合成演示：独立比较 6>=6 为 true；实际用执行日志替换"
+    }
+  ]
+}

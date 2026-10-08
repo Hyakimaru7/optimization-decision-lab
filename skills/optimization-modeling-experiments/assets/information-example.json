@@ -1,0 +1,67 @@
+{
+  "distribution_kind": "hypothetical",
+  "loss_unit": "yuan",
+  "actions_feasible_in_all_states": true,
+  "states": [
+    "normal_material",
+    "difficult_material"
+  ],
+  "probabilities": [
+    0.5,
+    0.5
+  ],
+  "actions": [
+    "standard_process",
+    "careful_process"
+  ],
+  "losses": [
+    [
+      0,
+      100
+    ],
+    [
+      40,
+      40
+    ]
+  ],
+  "experiments": [
+    {
+      "id": "noisy_preproduction_test",
+      "signals": [
+        "normal_signal",
+        "difficult_signal"
+      ],
+      "likelihood": [
+        [
+          0.8,
+          0.2
+        ],
+        [
+          0.2,
+          0.8
+        ]
+      ],
+      "cost": 5,
+      "available_before_decision": true
+    },
+    {
+      "id": "expensive_perfect_test",
+      "signals": [
+        "normal_signal",
+        "difficult_signal"
+      ],
+      "likelihood": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "cost": 25,
+      "available_before_decision": true
+    }
+  ]
+}

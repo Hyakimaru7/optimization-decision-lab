@@ -1,0 +1,45 @@
+{
+  "objective": {
+    "sense": "max",
+    "coefficients": [
+      3,
+      2
+    ],
+    "constant": 0
+  },
+  "inequalities": {
+    "A": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "b": [
+      4,
+      2
+    ]
+  },
+  "equalities": {
+    "A": [],
+    "b": []
+  },
+  "bounds": [
+    [
+      0,
+      null
+    ],
+    [
+      0,
+      null
+    ]
+  ],
+  "integer_indices": [],
+  "solution": [
+    2,
+    2
+  ]
+}

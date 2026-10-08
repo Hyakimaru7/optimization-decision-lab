@@ -1,0 +1,104 @@
+{
+  "distribution_kind": "hypothetical",
+  "cost_unit": "yuan",
+  "demand_unit": "units",
+  "alpha": 0.9,
+  "baseline_policy_id": "mean-cost-stock-8",
+  "scenarios": [
+    {
+      "id": "eval-6",
+      "probability": 0.25,
+      "demand": 6
+    },
+    {
+      "id": "eval-10",
+      "probability": 0.5,
+      "demand": 10
+    },
+    {
+      "id": "eval-16",
+      "probability": 0.25,
+      "demand": 16
+    }
+  ],
+  "policies": [
+    {
+      "id": "mean-cost-stock-8",
+      "outcomes": [
+        {
+          "scenario_id": "eval-6",
+          "status": "ok",
+          "total_cost": 18,
+          "shortfall": 0,
+          "hard_violation": false
+        },
+        {
+          "scenario_id": "eval-10",
+          "status": "ok",
+          "total_cost": 26,
+          "shortfall": 2,
+          "hard_violation": false
+        },
+        {
+          "scenario_id": "eval-16",
+          "status": "ok",
+          "total_cost": 56,
+          "shortfall": 8,
+          "hard_violation": false
+        }
+      ]
+    },
+    {
+      "id": "risk-aware-stock-12",
+      "outcomes": [
+        {
+          "scenario_id": "eval-6",
+          "status": "ok",
+          "total_cost": 30,
+          "shortfall": 0,
+          "hard_violation": false
+        },
+        {
+          "scenario_id": "eval-10",
+          "status": "ok",
+          "total_cost": 26,
+          "shortfall": 0,
+          "hard_violation": false
+        },
+        {
+          "scenario_id": "eval-16",
+          "status": "ok",
+          "total_cost": 44,
+          "shortfall": 4,
+          "hard_violation": false
+        }
+      ]
+    },
+    {
+      "id": "cover-training-stock-14",
+      "outcomes": [
+        {
+          "scenario_id": "eval-6",
+          "status": "ok",
+          "total_cost": 36,
+          "shortfall": 0,
+          "hard_violation": false
+        },
+        {
+          "scenario_id": "eval-10",
+          "status": "ok",
+          "total_cost": 32,
+          "shortfall": 0,
+          "hard_violation": false
+        },
+        {
+          "scenario_id": "eval-16",
+          "status": "ok",
+          "total_cost": 38,
+          "shortfall": 2,
+          "hard_violation": false
+        }
+      ]
+    }
+  ]
+}

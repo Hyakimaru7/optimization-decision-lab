@@ -1,0 +1,4 @@
+interface:
+  display_name: "Optimization Modeling and Experiments"
+  short_description: "Model decisions, validate plans, and assess information value"
+  default_prompt: "Use $optimization-modeling-experiments to clarify my decisions and business constraints, build and validate a sufficient model, and assess uncertainty, plan validity, or measurement value when relevant."

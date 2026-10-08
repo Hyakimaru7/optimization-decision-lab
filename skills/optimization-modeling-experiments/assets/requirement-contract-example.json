@@ -1,0 +1,52 @@
+{
+  "model_revision": "synthetic-model-v3",
+  "model_elements": [
+    "B_min_delivery"
+  ],
+  "validators": [
+    "check_B_order"
+  ],
+  "requirements": [
+    {
+      "id": "B_min",
+      "text": "Deliver at least 6 units of product B (synthetic example)",
+      "kind": "hard",
+      "source": "synthetic-order-demo",
+      "revision": "synthetic-requirement-v1",
+      "model_elements": [
+        "B_min_delivery"
+      ],
+      "validator_ids": [
+        "check_B_order"
+      ],
+      "test_ids": [
+        "B_bad5",
+        "B_boundary6"
+      ],
+      "semantic_review": {
+        "status": "confirmed",
+        "evidence": "Synthetic demonstration: y>=6; replace with an actual formula review record"
+      }
+    }
+  ],
+  "tests": [
+    {
+      "id": "B_bad5",
+      "requirement_id": "B_min",
+      "requirement_revision": "synthetic-requirement-v1",
+      "model_revision": "synthetic-model-v3",
+      "validator_id": "check_B_order",
+      "result": "passed",
+      "evidence": "Synthetic demonstration: 5>=6 is false; replace with actual execution evidence"
+    },
+    {
+      "id": "B_boundary6",
+      "requirement_id": "B_min",
+      "requirement_revision": "synthetic-requirement-v1",
+      "model_revision": "synthetic-model-v3",
+      "validator_id": "check_B_order",
+      "result": "passed",
+      "evidence": "Synthetic demonstration: 6>=6 is true; replace with actual execution evidence"
+    }
+  ]
+}

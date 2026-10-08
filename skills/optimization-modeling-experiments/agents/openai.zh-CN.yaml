@@ -1,0 +1,4 @@
+interface:
+  display_name: "优化建模与实验验证"
+  short_description: "面向生产生活与科研建立优化模型，核查业务规则、方案有效范围与测量信息价值"
+  default_prompt: "请使用 $optimization-modeling-experiments，明确决策目标与业务约束，建立并回验最小充分优化模型，按需要评估不确定性、方案失效条件和下一项测量的决策价值。"

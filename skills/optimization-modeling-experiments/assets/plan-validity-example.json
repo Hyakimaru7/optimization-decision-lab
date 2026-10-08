@@ -1,0 +1,110 @@
+{
+  "model": {
+    "objective": {
+      "sense": "max",
+      "coefficients": [
+        80,
+        50
+      ]
+    },
+    "inequalities": {
+      "A": [
+        [
+          3,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "b": [
+        40,
+        25,
+        -6
+      ]
+    },
+    "equalities": {
+      "A": [],
+      "b": []
+    },
+    "bounds": [
+      [
+        0,
+        12
+      ],
+      [
+        0,
+        20
+      ]
+    ],
+    "integer_indices": [
+      0,
+      1
+    ],
+    "solution": [
+      8,
+      7
+    ]
+  },
+  "uncertainty": {
+    "inequalities": {
+      "coefficient_absolute": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "rhs_absolute": [
+        2,
+        1,
+        0
+      ]
+    },
+    "equalities": {
+      "coefficient_absolute": [],
+      "rhs_absolute": []
+    },
+    "bounds": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ]
+  },
+  "target_radius": 1,
+  "tolerances": {
+    "atol": 0,
+    "rtol": 0,
+    "integer_tol": 0
+  },
+  "artifact": {
+    "model_revision": "synthetic-model-v3",
+    "data_revision": "synthetic-capacity-40-25",
+    "context_revision": "synthetic-order-B-at-least-6",
+    "generated_at": "2026-10-08T09:00:00+08:00",
+    "expires_at": "2026-10-08T18:00:00+08:00"
+  },
+  "current": {
+    "model_revision": "synthetic-model-v3",
+    "data_revision": "synthetic-capacity-40-25",
+    "context_revision": "synthetic-order-B-at-least-6",
+    "as_of": "2026-10-08T10:00:00+08:00"
+  }
+}

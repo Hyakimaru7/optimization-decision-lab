@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0",
+  "experiment_id": "initial-smoke-check",
+  "mode": "smoke",
+  "problem": {
+    "instance_path": null,
+    "source_kind": "synthetic",
+    "objective_sense": "min",
+    "model_parameters": {},
+    "data_hash": null
+  },
+  "methods": [],
+  "decision": {
+    "information_cutoff": null,
+    "current_policy": null,
+    "implementation_cost_definition": null
+  },
+  "uncertainty": {
+    "enabled": false,
+    "distribution_kind": null,
+    "fit_data_path": null,
+    "tuning_data_path": null,
+    "evaluation_data_path": null,
+    "stress_scenarios_path": null,
+    "cvar_alpha": 0.9,
+    "risk_weight": 0.0
+  },
+  "operations": {
+    "rolling_horizon_enabled": false,
+    "initial_state_path": null,
+    "committed_actions_path": null,
+    "terminal_state_definition": null
+  },
+  "randomness": {
+    "instance_seed": 42,
+    "algorithm_seed": null,
+    "repeats": 1
+  },
+  "budget": {
+    "per_run_seconds": 60,
+    "total_seconds": 300,
+    "threads": 1,
+    "max_diagnostic_retries": 2
+  },
+  "validation": {
+    "feasibility_absolute_tolerance": 0.000001,
+    "feasibility_relative_tolerance": 0.000001,
+    "integrality_tolerance": 0.000001,
+    "optimality_relative_tolerance": 0.0001,
+    "constraint_scales": {},
+    "gap_reference_scale": 1.0
+  },
+  "protocol": {
+    "timing": "cold_end_to_end_with_components",
+    "warm_start": false,
+    "paired_instances": true,
+    "aggregation_attempt_policy": "first_attempt_with_quality_check",
+    "save_all_attempts": true
+  },
+  "output": {
+    "directory": "results",
+    "raw_records": "runs.jsonl",
+    "planned_runs": "planned_runs.json",
+    "save_solutions": true,
+    "save_logs": true
+  }
+}
